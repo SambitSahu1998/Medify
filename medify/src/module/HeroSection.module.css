@@ -1,0 +1,126 @@
+.heroContainer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0rem 3rem;
+    height:89vh;
+    background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+}
+
+.heroContent{
+    flex:1;
+    max-width:50%;
+    padding:20px;
+    height: 70%; 
+    align-self: center;
+}
+
+.heroButton{
+    border-radius: 8px;
+    background-color: #2AA8FF;
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor:pointer;
+    padding: 8px 20px;
+    border:none;
+}
+
+.heroImage{
+    flex:1;
+    max-width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:"center";
+    height: 100%;
+    position: relative;
+}
+
+.heroImageDotted{
+    width:15%;
+    height: 10%;
+    position: absolute;
+    z-index: 1;
+    top:60%;
+    right:5%;
+    transform: translateY(-50%);
+}
+
+
+.heroImage img{
+    width:100%;
+    height:auto;
+    object-fit:fill;
+}
+
+
+.heroBlue{
+    font-family: Poppins;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color:#2AA7FF;
+}
+
+.heroMedical{
+    color:#000000;
+    font-family: Poppins;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.heroParagraph{
+    font-family: Poppins;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 68px;
+    margin-bottom: 0%;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color:"#102851";
+}
+
+.heroSubtitle{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+@media(max-width: 768px){
+    .heroContainer{
+        flex-direction: column;
+        height:auto;
+        padding:10px;
+    }
+
+    .heroContent,.heroImage{
+        max-width: 100%;
+        flex:none;
+        margin-bottom: 20px;
+    }
+    .heroImage {
+        max-width: 100%;
+        padding: 10px;
+      }
+      
+      .heroImageDotted {
+        width: 20%;
+        height: auto;
+        right: 10%;
+      }
+}
+
+  @media (max-width: 480px) {
+    .heroImageDotted {
+      width: 25%;
+      right: 15%;
+    }
+  }

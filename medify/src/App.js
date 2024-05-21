@@ -8,6 +8,10 @@ import Medicines from "./component/Medicines";
 import Surgeries from "./component/Surgeries";
 import Softwareforproviders from "./component/Softwareforproviders";
 import Facilities from "./component/Facilities";
+import HeroSection from "./component/HeroSection";
+import ImageSwiper from "./component/ImageSwiper";
+import SearchComponent from "./component/SearchComponent";
+import Specialisation from "./component/Specialisation";
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
         <Route path="/softwareforproviders" element={<Softwareforproviders/>}/>
         <Route path="/facilities" element={<Facilities/>}/>
       </Routes>
+      <HeroSection/>
+      <SearchComponent/>
+      <ImageSwiper />
+      <Specialisation/>
     </Router>
   );
 }

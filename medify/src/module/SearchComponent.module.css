@@ -1,0 +1,128 @@
+.searchContainer {
+  background-color: white;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 1;
+  padding: 20px;
+  width: 91%;
+  height: 350px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px 0px #888888;
+  text-align: center;
+}
+
+.searchBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.services {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.searchBar input[type="text"] {
+  margin: 10px;
+  padding: 14px;
+  width: 25%;
+  border-radius: 4px;
+  background-color: #fafbfe;
+  border: 1px solid #f0f0f0;
+}
+
+.searchBar input[type="text"]:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 7px 0px #AAAAAA;
+}
+
+.searchButton {
+    margin: 5px;
+    background-color: #2aa8ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .searchButton{
+    font-size: 0.9em;
+    margin-right: 8px;
+  }
+  
+  .searchButton span {
+    font-size: 1em;
+  }
+  
+
+.searchHeading {
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 500;
+  margin-top: 2%;
+  letter-spacing: 0.02em;
+  color: #102851;
+}
+
+.serviceCard {
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardContent {
+  padding: 1px 15px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.cardContent img {
+  width: 70%;
+  height: 100%;
+}
+
+.serviceCard:hover .cardContent {
+  border-color: #2aa8ff;
+}
+
+.selected .cardContent p{
+  color: #2aa8ff;
+  font-weight: 800;
+}
+
+.selected .cardContent {
+  border-color: #2aa8ff;
+}
+
+.cardContent p {
+  color: #abb6c7;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+
+@media(max-width:1280px) {
+    .searchContainer{
+        top: 108%;
+        height: 300px;
+    }  
+    .searchHeading{
+      margin:1.5% 0% 0% 0%;
+    }  
+}

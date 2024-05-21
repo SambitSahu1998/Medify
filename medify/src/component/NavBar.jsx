@@ -34,6 +34,7 @@ const Button = styled.button`
   font-weight: 500;
   padding: 8px 10px;
   border:none;
+  cursor:pointer;
 `;
 
 const Nav = styled.nav`
@@ -72,9 +73,13 @@ const NavLink = styled(Link)`
   color:#102851;
   text-decoration: none;
   font-size: 14px;
+  border-radius:none;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    text-decoration: underline;
+    color: #0d1e3d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 `;
 
